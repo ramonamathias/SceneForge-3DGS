@@ -1,0 +1,37 @@
+{
+  "app": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "max_upload_mb": 1024,
+    "max_concurrent_jobs": 1
+  },
+  "paths": {
+    "colmap_exe": "C:/Users/seque/Downloads/colmap-x64-windows-nocuda/bin/colmap.exe",
+    "gaussian_python": "C:/Projects/3D-Scene-Reconstruction/gaussian-splatting/venv/Scripts/python.exe",
+    "gaussian_train_script": "C:/Projects/3D-Scene-Reconstruction/gaussian-splatting/train.py",
+    "sibr_exe": "C:/Projects/3D-Scene-Reconstruction/gaussian-splatting/SIBR_viewers/install/bin/SIBR_gaussianViewer_app.exe",
+    "sibr_args": [
+      "--model-path",
+      "{model}",
+      "--iteration",
+      "30000",
+      "--path",
+      "{dataset}"
+    ]
+  },
+  "reconstruction": {
+    "target_fps": 5,
+    "max_frames": 180,
+    "resize_max_dimension": 1600,
+    "jpeg_quality": 95,
+    "min_registered_images": 20,
+    "min_sparse_points": 1000,
+    "colmap_max_image_size": 1800,
+    "max_sift_features": 8192,
+    "sequential_overlap": 10,
+    "training_iterations": 30000,
+    "training_resolution": 2,
+    "open_sibr_when_complete": true,
+    "keep_job_files": true
+  }
+}
